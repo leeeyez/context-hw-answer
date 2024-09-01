@@ -5,7 +5,9 @@ const TagContext = createContext();
 
 export const TagProvider = ({ children }) => {
   const [tagId, setTagId] = useState(null);
-  const tagName = hashtags.find((tag) => tag.id === tagId).name;
+  const tagName =
+    hashtags.find((tag) => tag.id === tagId) &&
+    hashtags.find((tag) => tag.id === tagId).name;
   console.log("tagId:", tagId);
   console.log("tangNam:", tagName);
 
