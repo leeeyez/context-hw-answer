@@ -5,14 +5,6 @@ import SelectedTag from "./components/SelectedTag";
 import styled from "styled-components";
 import { TagProvider } from "./contexts/TagContext";
 
-const Body = styled.div`
-  padding-left: 30px;
-`;
-
-const Box = styled.div`
-  display: flex;
-`;
-
 const App = () => {
   return (
     <TagProvider>
@@ -91,3 +83,11 @@ const posts = [
   { id: 51, content: "Zinnia", name: "Z" },
   { id: 52, content: "Zest", name: "Z" },
 ];
+
+const Body = styled.div`
+  padding-left: 30px;
+`;
+
+const Box = styled.div`
+  display: flex;
+`;
